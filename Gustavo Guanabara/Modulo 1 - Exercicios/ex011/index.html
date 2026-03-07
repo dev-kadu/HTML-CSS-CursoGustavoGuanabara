@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes</p>
+
+    <picture>
+        <source media="(min-width: 1000px)" srcset="imagens/foto-g.png">
+        <source media="(min-width: 700px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-p.png" alt="Imagem flexivel">
+    </picture>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/intergalactic.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
