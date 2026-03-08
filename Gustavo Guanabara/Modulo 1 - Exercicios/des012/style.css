@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+}
+
+:root {
+ --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+ --fonte-cordel: cursive, san-serif;
+}
+
+header {
+    background-color: black;
+    min-height: 10rem;
+}
+header > div {
+    padding-top: 3rem;
+}
+header h1 {
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+    top: 5rem;
+}
+header aside {
+    
+    font-family: var(--fonte-padrao);
+    font: .75rem;
+    color: white;
+    text-align: center;
+
+}
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+main section.flor {
+    position: relative;
+    background-color: white;
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    color: black;
+    font-family: var(--fonte-cordel);
+    min-width: 320px;
+    min-height: 400px;
+    background-position: center center;
+    background-attachment: fixed;
+
+
+}
+
+main section.livro {
+    position: relative;
+    background-color: white;
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    color: black;
+    font-family: var(--fonte-cordel);
+    min-width: 320px;
+    min-height: 400px;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+main section.papel {
+    position: relative;
+    background-color: white;
+    color: black;
+    font-family: var(--fonte-cordel);
+    min-width: 320px;
+    min-height: 400px;
+
+
+}
+
+main section p {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    padding: 10px;
+    margin: 10px;
+}
+
+main section.livro p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.600);
+    border-radius: 15px;
+}
+main section.flor p {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+}
+
+footer {
+    font-family: var(--fonte-padrao);
+    font-size: 1rem;
+    text-align: center;
+    padding: 2rem;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
