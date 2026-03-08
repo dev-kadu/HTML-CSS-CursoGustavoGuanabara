@@ -1,10 +1,19 @@
+@charset "UTF-8";
+
 * {
     margin: 0;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 :root {
- --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
- --fonte-cordel: cursive, san-serif;
+    --fonte-padrao: "Passion One", sans-serif;;
+    --fonte-cordel: "Sriracha", cursive;
+}
+
+html, body {
+    min-height: 100%;
+    background-color: black;
+    color: white;
 }
 
 header {
@@ -16,6 +25,7 @@ header > div {
 }
 header h1 {
     font-family: var(--fonte-padrao);
+    font-variant: small-caps;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -28,7 +38,7 @@ header aside {
     font: .75rem;
     color: white;
     text-align: center;
-
+    padding: 2rem;
 }
 header a {
     text-decoration: none;
@@ -37,9 +47,11 @@ header a {
     text-align: center;
 }
 
-body {
-    background-color: black;
-    color: white;
+main section {
+    line-height: 2rem;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-family: var(--fonte-cordel);
 }
 
 main section.flor {
@@ -49,7 +61,7 @@ main section.flor {
     background-size: cover;
     color: black;
     font-family: var(--fonte-cordel);
-    min-width: 320px;
+    min-width: 300px;
     min-height: 400px;
     background-position: center center;
     background-attachment: fixed;
@@ -64,7 +76,7 @@ main section.livro {
     background-size: cover;
     color: black;
     font-family: var(--fonte-cordel);
-    min-width: 320px;
+    min-width: 300px;
     min-height: 400px;
     background-position: center center;
     background-attachment: fixed;
@@ -76,7 +88,7 @@ main section.papel {
     background-color: white;
     color: black;
     font-family: var(--fonte-cordel);
-    min-width: 320px;
+    min-width: 300px;
     min-height: 400px;
 
 
@@ -84,11 +96,12 @@ main section.papel {
 
 main section p {
     display: block;
-    position: absolute;
+    position: relative;
     top: 50%;
-    transform: translate(0%,-50%);
-    padding: 10px;
+    padding: 30px;
     margin: 10px;
+    max-width: 300px;
+
 }
 
 main section.livro p {
@@ -112,4 +125,7 @@ footer a {
     text-decoration: none;
     color: white;
     font-weight: bolder;
+}
+a:hover {
+    text-decoration: underline;
 }
