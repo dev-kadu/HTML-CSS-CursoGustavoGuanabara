@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario</title>
+  </head>
+  <body>
+    <form action="cadastrar.php" method="post" autocomplete="on">
+      <p>
+        <label for="inome">Nome: </label>
+        <input
+          type="text"
+          name="nome"
+          id="inome"
+          autocomplete="name"
+          required
+          minlength="4"
+          maxlength="60"
+          size="20"
+          placeholder="Insira seu nome"
+        />
+      </p>
+      <p>
+        <label for="isenha">Senha: </label>
+        <input
+          type="password"
+          name="senha"
+          id="isenha"
+          autocomplete="new-password"
+          required
+          minlength="8"
+          maxlength="60"
+          size="20"
+          placeholder="Minimo de 8 caracteres"
+        />
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
