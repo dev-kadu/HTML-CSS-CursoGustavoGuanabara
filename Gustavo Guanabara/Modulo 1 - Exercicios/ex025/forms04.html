@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Teste</title>
+</head>
+<body>
+    <h1>Formulario Teste</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome Completo: </label>
+                <input type="text" name="nome" id="inome"
+                    required
+                    minlength="5"
+                    maxlength="60"
+                    placeholder="Ex. José da Silva"
+                    autocomplete="name"
+                >
+            </p>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail"
+                    required
+                    minlength="5"
+                    maxlength="60"
+                    placeholder="Ex. jose@email.com"
+                    autocomplete="email"
+                >
+            </p>
+            <p>
+                <label for="itelefone">Telefone: </label>
+                <input type="tel" name="telefone" id="itelefone"
+                    required
+                    pattern="\(\d{2}\)\d{4,5}\-\d{4}$"
+                    placeholder="(99)99999-9999"
+                >
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" name="enviar" value="Enviar">
+            <input type="reset" name="redefinir" value="Redefinir">
+        </p>
+    </form>
+</body>
+</html>

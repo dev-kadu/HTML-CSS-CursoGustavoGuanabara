@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Formulario Teste</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasculino" value="M"><label for="imasculino">Masculino</label>
+            <input type="radio" name="sexo" id="ifeminino" value="M"><label for="ifeminino">Feminino</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Esportes</legend>
+            <input type="checkbox" name="Basquete" id="iBasquete"> <label for="iBasquete">Basquete</label><br>
+            <input type="checkbox" name="Futebol" id="iFutebol" checked> <label for="iFutebol" >Futebol</label><br>
+            <input type="checkbox" name="Volei" id="iVolei"> <label for="iVolei">Volei</label><br>
+            <input type="checkbox" name="Tenis" id="iTenis"> <label for="iTenis">Tenis</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Outros</legend>
+            <p>
+                <label for="cor">Cor </label><input type="color" name="cor" id="icor" value="#00ff00"><br>
+                <label for="arquivo">Insira o arquivo: </label><input type="file"> <br>
+                <label for="nota">Insira sua nota: </label><input type="range" min="0" max="5" value="3">
+
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Botoes de Acao</legend>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Redefinir">
+            </p>
+        </fieldset>
+
+    </form>
+</body>
+</html>
