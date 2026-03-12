@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@media print {
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2rem;
+        line-height: 2rem;
+        color: black;
+        text-shadow: none;
+    }
+
+    body {
+        background-image: url(../../imagens/back-print.jpg); /*Nao funciona*/
+        border: 2px solid black;
+    }
+    main::after{
+        content: "Versao impressa";
+    }
+    img#telefone {
+        display: none;
+    }
+    img#impressora {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body {
+        background-image: url(../../imagens/back-tablet.jpg);
+    }
+    img#telefone{
+        display: none;
+    }
+    img#tablet{
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body {
+        background-image: url(../../imagens/back-pc.jpg);
+    }
+    img#telefone{
+        display: none;
+    }
+    img#pc{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../../imagens/back-tv.jpg);
+    }
+    main {
+        width: 50vw;
+    }
+    img#telefone{
+        display: none;
+    }
+    img#tv{
+        display: block;
+    }
+}
