@@ -1,42 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Media Query</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/media-queries.css" />
+  </head>
+  <body onresize="mudouTamanho()">
     <header>
-        <h1>Meu Site</h1>
-        <span class="material-symbols-outlined" id="menu" onclick="clickMenu()">menu</span>
-        <menu id="itens">
-            <ul>
-                <li><a href="#">Opcao 1</a></li>
-                <li><a href="#">Opcao 2</a></li>
-                <li><a href="#">Opcao 3</a></li>
-                <li><a href="#">Opcao 4</a></li>
-                <li><a href="#">Opcao 5</a></li>
-            </ul>
-        </menu>
+      <h1>Meu Site</h1>
+      <span class="material-symbols-outlined" id="menu" onclick="clickMenu()"
+        >menu</span
+      >
+      <menu id="itens">
+        <ul>
+          <li><a href="#">Opcao 1</a></li>
+          <li><a href="#">Opcao 2</a></li>
+          <li><a href="#">Opcao 3</a></li>
+          <li><a href="#">Opcao 4</a></li>
+          <li><a href="#">Opcao 5</a></li>
+        </ul>
+      </menu>
     </header>
     <main>
-        <article>
-            <h2>Testando media Query</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fuga neque, nostrum architecto quae ducimus dolorum tempora sint illo voluptate quia fugiat ipsam praesentium numquam magnam corporis dolore libero minima.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, doloremque odit. Optio recusandae praesentium natus ipsum consectetur, earum, doloremque dolorem sunt labore facilis officia repellat sit deleniti ad dolor quidem.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet enim commodi ipsum molestias aperiam voluptatibus, totam repellendus! Eveniet at error quos porro nihil rerum et dolores aperiam alias? Asperiores, quisquam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, doloremque odit. Optio recusandae praesentium natus ipsum consectetur, earum, doloremque dolorem sunt labore facilis officia repellat sit deleniti ad dolor quidem.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis delectus quae magni aspernatur? Veniam soluta nam quam nulla cumque labore provident earum ab maxime incidunt repellat accusantium consectetur, sequi quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, nesciunt soluta. Ipsam delectus assumenda reprehenderit beatae eaque. Placeat nemo veniam ratione, velit modi eum, similique at voluptates molestiae consequatur quis!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet enim commodi ipsum molestias aperiam voluptatibus, totam repellendus! Eveniet at error quos porro nihil rerum et dolores aperiam alias? Asperiores, quisquam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, doloremque odit. Optio recusandae praesentium natus ipsum consectetur, earum, doloremque dolorem sunt labore facilis officia repellat sit deleniti ad dolor quidem.</p>
-        </article>
+      <article>
+        <h2>Testando media Query</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fuga
+          neque, nostrum architecto quae ducimus dolorum tempora sint illo
+          voluptate quia fugiat ipsam praesentium numquam magnam corporis dolore
+          libero minima.Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Ratione, doloremque odit. Optio recusandae praesentium natus
+          ipsum consectetur, earum, doloremque dolorem sunt labore facilis
+          officia repellat sit deleniti ad dolor quidem.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet enim
+          commodi ipsum molestias aperiam voluptatibus, totam repellendus!
+          Eveniet at error quos porro nihil rerum et dolores aperiam alias?
+          Asperiores, quisquam.Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Ratione, doloremque odit. Optio recusandae
+          praesentium natus ipsum consectetur, earum, doloremque dolorem sunt
+          labore facilis officia repellat sit deleniti ad dolor quidem.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+          delectus quae magni aspernatur? Veniam soluta nam quam nulla cumque
+          labore provident earum ab maxime incidunt repellat accusantium
+          consectetur, sequi quas.Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Nihil, nesciunt soluta. Ipsam delectus assumenda
+          reprehenderit beatae eaque. Placeat nemo veniam ratione, velit modi
+          eum, similique at voluptates molestiae consequatur quis!Lorem ipsum,
+          dolor sit amet consectetur adipisicing elit. Eveniet enim commodi
+          ipsum molestias aperiam voluptatibus, totam repellendus! Eveniet at
+          error quos porro nihil rerum et dolores aperiam alias? Asperiores,
+          quisquam.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Ratione, doloremque odit. Optio recusandae praesentium natus ipsum
+          consectetur, earum, doloremque dolorem sunt labore facilis officia
+          repellat sit deleniti ad dolor quidem.
+        </p>
+      </article>
     </main>
     <script>
-        function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
+      function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+          itens.style.display = "block";
+        } else {
+          itens.style.display = "none";
         }
+      }
+      function clickMenu() {
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+      }
     </script>
-</body>
+  </body>
 </html>

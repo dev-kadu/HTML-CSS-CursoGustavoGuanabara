@@ -1,92 +1,89 @@
 @charset "UTF-8";
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
-    height: 100vh;
-    background-color: lightgray;
+  height: 100vh;
+  background-color: lightgray;
 }
 body {
-    color: black;
-    margin: auto;
-    padding: 0rem;
-    width: 90vw;
+  color: black;
+  margin: auto;
+  padding: 0rem;
+  width: 90vw;
 }
 
 header {
-    margin: 0rem;
-    padding: 0rem;
+  margin: 0rem;
+  padding: 0rem;
 }
 
 header > h1 {
-    text-align: center;
-    padding: 1rem;
-    margin: 0rem;
-    background-color: lightblue;
+  text-align: center;
+  padding: 1rem;
+  margin: 0rem;
+  background-color: lightblue;
 }
 
 menu {
-    display: none;
-    padding: 0rem;
-    margin: 0rem;
-
+  display: block;
+  padding: 0rem;
+  margin: 0rem;
 }
 
 menu > ul {
-    list-style: none;
-    padding: 0rem;
-    
+  list-style: none;
+  padding: 0rem;
 }
 
-menu > ul >li > a {
-    display: block;
-    padding: 1rem;
-    text-decoration: none;
-    background-color: rgb(58, 58, 58);
-    color: white;
-    text-align: center;
-    border-top: 2px solid lightgray;
-    border-radius: 0.25rem;
-
+menu > ul > li > a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  text-align: center;
+  border-top: 2px solid lightgray;
+  border-radius: 0.25rem;
 }
 
-menu > ul >li > a:hover {
-    background-color: rgba(222, 221, 221, 0.502);
+menu > ul > li > a:hover {
+  background-color: rgba(222, 221, 221, 0.502);
 }
 
 main {
-    background-color: white;
-    color: black;
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 2rem;
-    width: 85vw;
-    margin: auto;
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2rem;
+  width: 85vw;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
-main  h2 {
-    text-align: center;
-    padding-bottom: 1.5rem;
+main h2 {
+  text-align: center;
+  padding-bottom: 1.5rem;
 }
 article > p {
-    text-align: justify;
-    margin-bottom: 1.5rem;
-    text-indent: 1.5rem;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+  text-indent: 1.5rem;
 }
 
 span#menu {
-    background-color: rgb(51, 51, 51);
-    color: white;
-    padding: .75rem;
-    display: block;
-    text-align: center;
-    cursor: pointer;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  padding: 0.75rem;
+  display: block;
+  text-align: center;
+  cursor: pointer;
 }
 span#menu:hover {
-    background-color: rgb(186, 186, 186);
-    color: black;
+  background-color: rgb(186, 186, 186);
+  color: black;
 }
